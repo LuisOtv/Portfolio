@@ -1,7 +1,7 @@
 import { getLang, t, onLangChange } from './i18n.js';
 import { observeReveal } from './reveal.js';
 
-// Seus projetos. Imagens em /public/images.
+// Seus projetos. Imagens em public/images (caminho relativo: 'images/...').
 // `links`: lista de { label, href } — deixe vazia se o projeto não tiver link público.
 // `logo`: mostra a imagem inteira e centrada sobre a cor `logoBg` (para ícones e logotipos).
 const projects = [
@@ -12,7 +12,7 @@ const projects = [
       pt: 'App multiplataforma (Android, macOS e Linux) que preenche e gera em PDF atestados veterinários de brucelose e tuberculose. Funciona offline, sincroniza com a nuvem e monta sozinho o relatório mensal da ADEPARÁ.',
       en: 'Cross-platform app (Android, macOS and Linux) that fills in and generates veterinary brucellosis and tuberculosis certificates as PDFs. Works offline, syncs to the cloud and builds the monthly ADEPARÁ report automatically.',
     },
-    image: '/images/atestavet-icon.png',
+    image: 'images/atestavet-icon.png',
     logo: true,
     logoBg: 'bg-pastel-sky',
     tags: ['Flutter', 'Dart', 'Supabase'],
@@ -50,7 +50,7 @@ const projects = [
       pt: 'App para combater queimadas em Marabá-PA, com mapa de focos, denúncias, clima em tempo real, guia e sensores. Registrado no INPI e desenvolvido em coautoria com a equipe.',
       en: 'App to fight wildfires in Marabá, Brazil, with a fire map, reports, live weather, a guide and sensors. Registered with INPI (Brazilian IP office) and co-developed with a team.',
     },
-    image: '/images/sosqueimadas.webp',
+    image: 'images/sosqueimadas.webp',
     tags: ['Swift', 'iOS'],
     links: [],
   },
