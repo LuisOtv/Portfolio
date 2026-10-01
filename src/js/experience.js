@@ -66,9 +66,8 @@ const escape = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
 // Marcador na estrada: fica na linha (à esquerda no mobile, ao centro no desktop)
-const marker = (content, color, pulse = false) => `
+const marker = (content, color) => `
   <div class="absolute left-5 top-6 z-10 -translate-x-1/2 md:left-1/2">
-    ${pulse ? `<span class="absolute inset-0 animate-ping rounded-full ${color} opacity-70"></span>` : ''}
     <span class="relative flex h-11 w-11 items-center justify-center rounded-full border-4 border-cream ${color} font-display text-sm font-bold text-ink">
       ${content}
     </span>
@@ -80,7 +79,7 @@ function itemHTML(item, i) {
   const color = markerColors[i % markerColors.length];
   return `
     <li class="relative pb-12 pl-16 md:grid md:grid-cols-2 md:pl-0">
-      ${marker(String(i + 1).padStart(2, '0'), color, item.current)}
+      ${marker(String(i + 1).padStart(2, '0'), color)}
       <div class="reveal ${left ? 'md:col-start-1 md:pr-14 md:text-right' : 'md:col-start-2 md:pl-14'}">
         <article class="glass rounded-3xl p-6">
           <div class="flex flex-wrap items-center gap-2 ${left ? 'md:justify-end' : ''}">
