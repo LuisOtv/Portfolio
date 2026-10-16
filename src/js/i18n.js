@@ -14,6 +14,8 @@ const translations = {
       'Gosto de construir de tudo: de sites e APIs a apps em Swift e jogos na Godot. Aprendo rápido e trabalho bem em equipe.',
     'about.cta_projects': 'Ver projetos',
     'about.cv': 'Baixar currículo',
+    'about.cv_href': 'cv.pdf',
+    'about.cv_name': 'Curriculo_Luis_Otavio_Pimentel.pdf',
     'about.stack': 'Tecnologias',
     'about.photo_alt': 'Foto de Luís Otávio',
 
@@ -43,6 +45,8 @@ const translations = {
       'I love building all kinds of things: from websites and APIs to Swift apps and Godot games. I learn fast and work well in teams.',
     'about.cta_projects': 'View projects',
     'about.cv': 'Download résumé',
+    'about.cv_href': 'cv-en.pdf',
+    'about.cv_name': 'Resume_Luis_Otavio_Pimentel.pdf',
     'about.stack': 'Tech stack',
     'about.photo_alt': 'Photo of Luís Otávio',
 
@@ -97,6 +101,10 @@ function applyTranslations() {
   document.documentElement.lang = current === 'pt' ? 'pt-BR' : 'en';
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-cv-link]').forEach((el) => {
+    el.href = t('about.cv_href');
+    el.download = t('about.cv_name');
   });
   document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
     el.alt = t(el.dataset.i18nAlt);
