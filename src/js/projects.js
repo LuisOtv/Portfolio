@@ -6,17 +6,56 @@ import { observeReveal } from './reveal.js';
 // `logo`: mostra a imagem inteira e centrada sobre a cor `logoBg` (para ícones e logotipos).
 const projects = [
   {
-    title: 'PawSuite',
+    title: 'PawCut',
     period: { pt: '2026 — Atual', en: '2026 — Present' },
     description: {
-      pt: 'Quatro apps desktop em Rust para criar vídeos no Linux: PawCut (editor de vídeo com timeline, keyframes e exportação MP4), PawVoice (voz), PawWrite (roteiros) e PawPaint (pintura). Mesma interface e bibliotecas compartilhadas.',
-      en: 'Four desktop apps in Rust for making videos on Linux: PawCut (video editor with timeline, keyframes and MP4 export), PawVoice (voice), PawWrite (scripts) and PawPaint (painting). One shared interface and set of libraries.',
+      pt: 'Editor de vídeo para Linux no estilo da página Edit do DaVinci Resolve: timeline com várias faixas, keyframes, ajuste de cor, títulos e exportação em MP4. Um único compositor gera o preview e o arquivo final.',
+      en: 'Video editor for Linux in the style of DaVinci Resolve\'s Edit page: multi-track timeline, keyframes, color adjustment, titles and MP4 export. One compositor drives both the preview and the final file.',
     },
-    image: 'images/pawsuite.svg',
+    image: 'images/pawcut.svg',
     logo: true,
     logoBg: 'bg-pastel-lavender',
     tags: ['Rust', 'egui'],
-    links: [{ label: 'GitHub', href: 'https://github.com/LuisOtv/PawSuite' }],
+    links: [{ label: 'GitHub', href: 'https://github.com/LuisOtv/PawSuite/tree/main/crates/pawcut-app' }],
+  },
+  {
+    title: 'PawVoice',
+    period: { pt: '2026 — Atual', en: '2026 — Present' },
+    description: {
+      pt: 'Gravador e editor de voz no estilo do Audacity: faixas mono e estéreo, redução de ruído, normalização de loudness (LUFS), de-esser e teleprompter com o roteiro.',
+      en: 'Voice recorder and editor in the style of Audacity: mono and stereo tracks, noise reduction, loudness normalization (LUFS), de-esser and a script teleprompter.',
+    },
+    image: 'images/pawvoice.svg',
+    logo: true,
+    logoBg: 'bg-pastel-pink',
+    tags: ['Rust', 'egui'],
+    links: [{ label: 'GitHub', href: 'https://github.com/LuisOtv/PawSuite/tree/main/crates/pawvoice-app' }],
+  },
+  {
+    title: 'PawWrite',
+    period: { pt: '2026 — Atual', en: '2026 — Present' },
+    description: {
+      pt: 'Editor de roteiros para vídeo que mostra o tempo de fala de cada seção, separa notas de edição da fala e exporta legendas (.srt) pelo ritmo. Abre o roteiro direto no PawVoice.',
+      en: 'Script editor for video that shows the speaking time of each section, keeps edit notes apart from the spoken text and exports subtitles (.srt) from your pace. Opens the script straight in PawVoice.',
+    },
+    image: 'images/pawwrite.svg',
+    logo: true,
+    logoBg: 'bg-pastel-mint',
+    tags: ['Rust', 'egui'],
+    links: [{ label: 'GitHub', href: 'https://github.com/LuisOtv/PawSuite/tree/main/crates/pawwrite-app' }],
+  },
+  {
+    title: 'PawPaint',
+    period: { pt: '2026 — Atual', en: '2026 — Present' },
+    description: {
+      pt: 'Editor de imagens no estilo do Krita: motor de pincéis, camadas com 13 modos de mistura, máscaras, seleções, filtros e dockers que você arruma como quiser.',
+      en: 'Image editor in the style of Krita: brush engine, layers with 13 blend modes, masks, selections, filters and dockers you can arrange however you like.',
+    },
+    image: 'images/pawpaint.svg',
+    logo: true,
+    logoBg: 'bg-pastel-butter',
+    tags: ['Rust', 'egui'],
+    links: [{ label: 'GitHub', href: 'https://github.com/LuisOtv/PawSuite/tree/main/crates/pawpaint-app' }],
   },
   {
     title: 'AtestaVet',
