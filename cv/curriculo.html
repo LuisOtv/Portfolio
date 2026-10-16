@@ -57,7 +57,7 @@
         font-size: 9pt;
       }
       .contact .sep { margin: 0 6pt; color: #555; }
-      h2 {
+      h2 { break-after: avoid;
         margin: 10pt 0 5pt;
         font-size: 15pt;
       }
@@ -71,6 +71,7 @@
       li { padding-left: 2pt; }
       li::marker { font-size: 8pt; }
       .languages p { margin-bottom: 3pt; }
+      .apps { margin-top: 1pt; }
       .page-break { break-before: page; }
       .page-break > h2:first-child { margin-top: 0; }
     </style>
@@ -137,7 +138,7 @@
       </p>
     </div>
 
-    <section class="page-break">
+    <section>
       <h2>PROJETOS</h2>
       <div class="entry">
         <p class="entry-head">2024 - Atual<span class="sep"> | </span>PPMAC</p>
@@ -177,10 +178,15 @@
         <p class="entry-head">Out/2026 - Atual<span class="sep"> | </span>PAWSUITE</p>
         <p>Suíte de Aplicativos Desktop - Rust (github.com/luisotv/PawSuite)</p>
         <p>
-          Quatro aplicativos para criar vídeos no Linux: PawCut (editor de vídeo com timeline multifaixa, keyframes e
-          exportação MP4), PawVoice (voz), PawWrite (roteiros) e PawPaint (pintura com camadas). Desenvolvido
-          individualmente em Rust, com egui e FFmpeg, e mais de 140 testes automatizados.
+          Quatro aplicativos para criar vídeos no Linux, desenvolvidos individualmente em Rust, com egui e FFmpeg, e
+          mais de 140 testes automatizados:
         </p>
+        <ul class="apps">
+          <li><b>PawCut:</b> editor de vídeo com timeline multifaixa, keyframes, ajuste de cor e exportação em MP4</li>
+          <li><b>PawVoice:</b> gravação e edição de voz, com redução de ruído, loudness e teleprompter</li>
+          <li><b>PawWrite:</b> roteiros com tempo de fala e exportação de legendas (.srt)</li>
+          <li><b>PawPaint:</b> pintura com camadas, pincéis, seleções e filtros</li>
+        </ul>
       </div>
 
       <h2>HABILIDADES TÉCNICAS</h2>
