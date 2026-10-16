@@ -6,6 +6,19 @@ import { observeReveal } from './reveal.js';
 // `logo`: mostra a imagem inteira e centrada sobre a cor `logoBg` (para ícones e logotipos).
 const projects = [
   {
+    title: 'PawSuite',
+    period: { pt: '2026 — Atual', en: '2026 — Present' },
+    description: {
+      pt: 'Quatro apps desktop em Rust para criar vídeos no Linux: PawCut (editor de vídeo com timeline, keyframes e exportação MP4), PawVoice (voz), PawWrite (roteiros) e PawPaint (pintura). Mesma interface e bibliotecas compartilhadas.',
+      en: 'Four desktop apps in Rust for making videos on Linux: PawCut (video editor with timeline, keyframes and MP4 export), PawVoice (voice), PawWrite (scripts) and PawPaint (painting). One shared interface and set of libraries.',
+    },
+    image: 'images/pawsuite.svg',
+    logo: true,
+    logoBg: 'bg-pastel-lavender',
+    tags: ['Rust', 'egui'],
+    links: [{ label: 'GitHub', href: 'https://github.com/LuisOtv/PawSuite' }],
+  },
+  {
     title: 'AtestaVet',
     period: '2026',
     description: {
