@@ -54,7 +54,7 @@ const experience = [
 // Links do cartão "Próximo capítulo"
 const contactLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/luisotaviosiqueira' },
-  { label: 'GitHub', href: 'https://github.com/luisotv' },
+  { label: 'GitHub', href: 'https://github.com/eucomoareia' },
   { label: 'Email', href: 'mailto:luispim2005@gmail.com' },
 ];
 
